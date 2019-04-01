@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DATELAND - אתר הכרויות</title>
+    <link rel="stylesheet" href="profile-1.css">
+</head>
+
+<body style="background-color: rgb(203,251,255);">
+    <center>
+        <div id="main-div">
+            <div id="buttons-div">
+                <a href=""><img class="buttons" src="left-button.png" alt="Previous" style="float: left;" /></a>
+                <a href="homepage.html"><img class="buttons" src="homepage-button.png" alt="Home Page" /></a>
+                <a href=""><img class="buttons" src="right-button.png" alt="Next" style="float: right;" /></a>
+            </div>
+            <div id="gallery-profile">
+                <img src="1.png" class="photos" id="photo-1" alt="" onmouseover="changeImage(this)" />
+                <img src="2.png" class="photos" alt="" id="photo-2" onmouseover="changeImage(this)" />
+                <img src="3.jpg" class="photos" alt="" id="photo-3" onmouseover="changeImage(this)" />
+                <img src="4.png" class="photos" alt="" id="photo-4" onmouseover="changeImage(this)" />
+                <img src="1.png" alt="" id="main-photo" />
+            </div>
+            <div id="info-profile">
+                <p id="info-div">סמארה, הילדה המאיימת שיצאה מהטלוויזיה והפחידה את כולנו במשך שני סרטים תמימים.
+                    בתור הפחדנים שאנחנו יש הרבה מאד אימג'ים שגורמים לנו לכסות את עצמנו מתחת לשמיכה ולרעוד. אימג' אחד
+                    שמצליח לעורר צמרמורת גם בקרב אמיצים הרבה יותר הוא זה של סמארה, הילדה המתה שחוזרת לחיים בסרט האימה
+                    "הצלצול" מ-2002.
+                </p>
+                <h4 style="direction: rtl; float: right;margin-top: -5px;">תכונות:</h6>
+                    <ol style="direction: rtl;float: right;margin-top: -5px;">
+                        <li>גמישה</li>
+                        <li>יפייפיה</li>
+                        <li>מצחיקה וחייכנית</li>
+                    </ol>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div style="direction: rtl; float: right"><img src="telephone-icon.png" alt=""
+                            style="height: 25px; width: 25px;"><b>טלפון</b>:050-9999999
+                        <br>
+                        <img src="email-icon.png" alt="" style="height: 25px; width: 25px;"><a
+                            href="mailto:beautiful&sweet"><b>שלח לי אימייל</b></a>
+
+                    </div>
+            </div>
+            <div id="like-arena" style="margin-right: 100px;">
+                <table>
+                    <tbody style="direction: rtl;">
+
+                        <td>כמות הלייקים שנלחצו : <span id="counter" style="font-size: 30px;"> 0</span>.</td>
+                        <td><img src="like-button.png" alt="" style="height: 80px;width: auto;" onclick="UpByLike()">
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <h4 style="direction: rtl">כל הזכויות שמורות לצוות מספר 1 בקורס!</h4>
+        </footer>
+    </center>
+
+    <script>
+        var counter = 0;
+        function changeImage(source) {
+            document.getElementById('main-photo').src = source.src;
+        }
+
+        function UpByLike() {
+            counter++;
+            document.getElementById('counter').innerHTML = counter;
+        }
+    </script>
+</body>
+
+</html>
