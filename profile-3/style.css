@@ -1,0 +1,63 @@
+body{
+    background-color: #f8fff4;
+
+}
+#main-div{
+    background-color: #fafac6;
+    max-width: auto;
+    min-height: 500px;
+    border:  2px solid #fafac6;
+    border-radius: 5px;
+
+
+}
+.TextBox{
+    background-color: #fafac6;
+    color: #474350;
+    border:  2px solid grey;
+    border-radius: 20px;
+    margin-top: 5px; 
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+
+}
+.textMargin{
+    margin-left: 25px;
+}
+.container {
+    padding: 50px 120px;
+  }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .backGroundC{
+      background-color: #f8fff4;
+  }
+  .textColorMain{
+      color: #474350;
+  }
+  .textBoxIcons{
+      float: right;
+      height: 100px;
+      width: 100px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+  }
+  #imgSize{
+      height: 100;
+      width: 100;
+
+  }
+  .hStyle{
+    position: relative;
+    left: 38%;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+  }
+
