@@ -1,0 +1,110 @@
+<html>
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DATELAND - אתר הכרויות</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
+</head>
+
+<body style="background-color: #659DBD">
+
+    <div class="container">
+        <div id="buttons-row" class="row">
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                <a href="../profile-1/profile-1.html"><img class="button" src="../images/left-button.png" alt="Previous"
+                        style="float: left;" /></a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                <a href="../homepage/homepage.html"><img class="button" src="../images/homepage-button.png"
+                        alt="Home Page" /></a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4">
+                <a href="../profile-3/myuser.html"><img class="button" src="../images/right-button.png" alt="Next"
+                        style="float: right;" /></a>
+            </div>
+
+            <div id="main-div" class="row">
+                <div class="col-6">
+                    <p id="info-div">George is the old high school friend of Jerry Seinfeld and appears in every episode in the series except The Pen during the third season.
+                            Owning a terrible work ethic, George had a tumultuous career holding 14 differnt jobs over the course of the series.
+                            George dates 47 women over the course of nine seasons and is engaged to Susan Ross until her untimely death. It is revealed that Susan died when she was exposed to toxic glue from the cheap wedding invitations that George picked out.
+                    </p>
+
+                </div>
+
+                <div class="col-6">
+                    <img class="col-12" src="../images/profile-2/1.jpg" alt="" id="mainPic" style="width:400px ;height:300px">
+
+                </div>
+            </div>
+
+                    <div id="picRow" class="row">
+                            <div class="col-3">
+                                    <img src="../images/profile-2/1.jpg" class="picPrev" alt="" onmouseover="changeImage(this)">
+                                </div>
+                                <div class="col-3">
+                                        <img src="../images/profile-2/2.jpg" class="picPrev" alt="" onmouseover="changeImage(this)">
+                                    </div>
+                                    <div class="col-3">
+                                            <img src="../images/profile-2/3.jpg" class="picPrev" alt="" onmouseover="changeImage(this)">
+                                        </div>
+                                        <div class="col-3">
+                                                <img src="../images/profile-2/4.jpg" class="picPrev" alt="" onmouseover="changeImage(this)">
+                                            </div>
+                    </div>
+        
+                </div>
+
+            </div>
+
+            <div id="likeRow" class="row">
+                <div class="col-3">
+                <table>
+                        <td class="col-12"><p style="font-size: 20px"> Likes : </p><span id="counter" style="font-size: 30px;"> 0</span></td>
+                        <td class="col-12"><img src="../images/like-button.png" alt="" style="height: 80px;width: auto;"
+                                onclick="UpByLike()">
+                        </td>
+                </table>
+            </div>
+            <div class="col-3">
+                <p style="font-size: 20px">contacts:</p>
+            </div>
+            <div class="col-3">
+                    <img src="../images/email-icon.png" alt="" class="button">
+                    <p>GeorgeCostanza@gmail.com</p>
+                </div>
+                <div class="col-3">
+                        <img src="../images/telephone-icon.png" alt="" class="button">
+                        <p>0541321321</p>
+                </div>
+
+
+
+
+
+        </div>
+
+        <script>
+                var counter = 0;
+                function changeImage(source) {
+                    document.getElementById('mainPic').src = source.src;
+                }
+        
+                function UpByLike() {
+                    counter++;
+                    document.getElementById('counter').innerHTML = counter;
+                }
+            </script>
+
+
+</body>
+
+</html>

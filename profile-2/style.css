@@ -1,0 +1,22 @@
+.button {
+    height: 50px;
+    width: 50px;
+}
+
+.picPrev{
+	height: 80px;
+    width: 100px;
+	margin-top: 5px;
+	
+}
+
+#main-div {
+    background-color: #5cdb95;
+    border-radius: 30px;
+    border-color: #05386B;
+    border-style: solid;
+	margin-top: 5px;
+}
+
+
+
