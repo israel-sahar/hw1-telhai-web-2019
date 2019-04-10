@@ -2,7 +2,7 @@
 <html>
 
 <head>
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,8 @@
                 alt="alice in wonderland">
             <h2>Alice</h2>
             <p>Hey there you!<br>So here's a little about me...<br>
-                I'm funny, really like adventurous and have many animal friends.<br>I also have a sister and I like to take naps.
+                I'm funny, really like adventurous and have many animal friends.<br>I also have a sister and I like to
+                take naps.
             </p>
             <p>
                 I'm looking for fun loving men
@@ -26,30 +27,70 @@
             <table>
                 <tr>
                     <td>
-                        <img class="phone" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_local_phone_48px-128.png" alt="phone">
+                        <img class="phone"
+                            src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_local_phone_48px-128.png"
+                            alt="phone">
                     </td>
                     <td>
                         <a href="https://www.whatsapp.com/">+972-539002617</a>
                     </td>
                 </tr>
                 <tr>
-                        <td>
-                            <img class="mail" src="https://freeiconshop.com/wp-content/uploads/edd/mail-solid.png" alt="mail">
-                        </td>
-                        <td>
-                                <a href="https://login.yahoo.com/?.src=ym&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd"> confirmedmailaddress@yahoo.com </a>
-                        </td>
-                    </tr>
-                    <tr>
-                            <td>
-                                <img class="location" src="https://image.flaticon.com/icons/png/128/86/86929.png" alt="location pin">
-                            </td>
-                            <td>
-                                <a href="https://www.google.com/maps/place/Barney's+Coffeeshop+Amsterdam/@52.3806303,4.8931827,17z/data=!3m1!4b1!4m5!3m4!1s0x47c609c92db5345b:0xe6fdc64e9d7c1bd6!8m2!3d52.380627!4d4.890994">Wonderland</a>
-                            </td>
-                        </tr>
+                    <td>
+                        <img class="mail" src="https://freeiconshop.com/wp-content/uploads/edd/mail-solid.png"
+                            alt="mail">
+                    </td>
+                    <td>
+                        <a
+                            href="https://login.yahoo.com/?.src=ym&.lang=en-US&.intl=us&.done=https%3A%2F%2Fmail.yahoo.com%2Fd">
+                            confirmedmailaddress@yahoo.com </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="location" src="https://image.flaticon.com/icons/png/128/86/86929.png"
+                            alt="location pin">
+                    </td>
+                    <td>
+                        <a
+                            href="https://www.google.com/maps/place/Barney's+Coffeeshop+Amsterdam/@52.3806303,4.8931827,17z/data=!3m1!4b1!4m5!3m4!1s0x47c609c92db5345b:0xe6fdc64e9d7c1bd6!8m2!3d52.380627!4d4.890994">Wonderland</a>
+                    </td>
+                </tr>
             </table>
         </div>
+        <table class="centered menu">
+            <tr>
+                <td class="likes">Number of likes: <span id="counter" style="font-size: 30px;"> 0</span>.</td>
+                <td class="likes"><img src="../images/like-button.png" alt="" style="height: 80px;width: auto;"
+                        onclick="UpByLike()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="../profile-3/myuser.html">
+                        <img src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/back-512.png"></a>
+                </td>
+                <td>
+                    <a href="../homepage/homepage.html"> <img
+                            src="https://png.pngtree.com/svg/20170823/634e92e78b.png"></a>
+                </td>
+                <td>
+                    <a href="../profile-5/profile-5.html"> <img
+                            src="https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/forward-512.png"></a>
+                </td>
+            </tr>
+        </table>
+        <script>
+            var counter = 0;
+            function changeImage(source) {
+                document.getElementById('main-photo').src = source.src;
+            }
+
+            function UpByLike() {
+                counter++;
+                document.getElementById('counter').innerHTML = counter;
+            }
+        </script>
     </div>
 </body>
 

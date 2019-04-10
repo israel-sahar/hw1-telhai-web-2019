@@ -60,3 +60,14 @@ body {
     font-size: 32px;
       text-decoration: none;
   }
+
+  .likes {
+    position: absolute;
+    left: 100px;
+    top: 200px;
+  }
+
+  .menu img{
+    width: 30px;
+    padding: 100px;
+  }
